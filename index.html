@@ -1,0 +1,183 @@
+<!-- ASSIGNMENT WEEK 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABBIE'S HTML Page</title>
+    <style>
+        body {
+            background-color: #E6E6FA; /* Light lilac background */
+            font-family: Arial, sans-serif;
+            color: #4B0082; /* Dark purple text */
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #6A0DAD; /* Rich purple headings */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #D8BFD8; /* Lavender table */
+        }
+        th, td {
+            border: 1px solid #4B0082;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #9370DB; /* Medium purple header */
+            color: white;
+        }
+        form {
+            background-color: #E6E6FA;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #6A0DAD;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #6A0DAD;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4B0082;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>Cake</li>
+            <li>Pizza</li>
+            <li>Soft Drinks</li>
+            <li>Crisps</li>
+            <li>Yoghurt</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>External Image</h2>
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Sample Image from Pexels" width="600">
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Mark</td>
+                    <td>234 Nairobi</td>
+                    <td>+254678906</td>
+                    <td>johnmark@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Stella</td>
+                    <td>456 Kiserian</td>
+                    <td>+254717898635</td>
+                    <td>janestella@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Peterson</td>
+                    <td>789 Kilimani</td>
+                    <td>+25436789266</td>
+                    <td>michaelp@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Nyambura</td>
+                    <td>101 Kahawa West</td>
+                    <td>+254362273236</td>
+                    <td>emilynyambu@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>David Githinji</td>
+                    <td>202 Nyeri</td>
+                    <td>+254924276237</td>
+                    <td>davidgithinji@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required><br><br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select><br><br>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="tech" name="interests" value="tech">
+            <label for="tech">Technology</label><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    
+</body>
+</html>
